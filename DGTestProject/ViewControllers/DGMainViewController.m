@@ -12,6 +12,7 @@
 #import "DGUtilits.h"
 #import "DGDetailsViewController.h"
 
+
 NSString *kShowDetailsSegueIdentifier = @"ShowDetails";
 
 @interface DGMainViewController ()<UITableViewDataSource, UITableViewDelegate>
@@ -24,18 +25,30 @@ NSString *kShowDetailsSegueIdentifier = @"ShowDetails";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    WEAK(self);
-    [self.applicationManager.dataAccesLayer getItemsListWithComplitionBlock:^(NSArray *data, NSError *error) {
-        if (!error) {
-            wself.data = data;
-            [wself.tableView reloadData];
-        }
-    }];
+    
+    
+    UIRefreshControl *refreshController = [[UIRefreshControl alloc] init];
+    [self.tableView addSubview:refreshController];
+    [refreshController addTarget:self action:@selector(reloadData:) forControlEvents:UIControlEventValueChanged];
+    [self reloadData:refreshController];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+}
+
+- (void)reloadData:(UIRefreshControl *)refreshController {
+    
+    WEAK(self);
+    [refreshController beginRefreshing];
+    [self.applicationManager.dataAccesLayer getItemsListWithComplitionBlock:^(NSArray *data, NSError *error) {
+        [refreshController endRefreshing];
+        if (!error) {
+            wself.data = data;
+            [wself.tableView reloadData];
+        }
+    }];
 }
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
