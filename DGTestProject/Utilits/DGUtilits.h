@@ -9,5 +9,7 @@
 #ifndef DGTestProject_DGUtilits_h
 #define DGTestProject_DGUtilits_h
 
+#define WEAK(object) __weak typeof(object) w##object = object
+id nvl(id obj1, id obj2);
 
 #endif

@@ -7,13 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "DGApplicationManager.h"
+#import "DGWebService.h"
+#import "DGConfig.h"
+
 
 @interface AppDelegate ()
 
+
 @end
+
+
 
 @implementation AppDelegate
 
+@synthesize applicationManager = _applicationManager;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -40,6 +48,18 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Properties
+- (DGApplicationManager *)applicationManager {
+    if (!_applicationManager) {
+        NSURL *url = [NSURL URLWithString:kBaseURL];
+        DGWebService *webService = [[DGWebService alloc] initWithServiceURL:url];
+        DGDataAccessLayer *dataAcessLayer = [[DGDataAccessLayer alloc] initWithWebService:webService];
+        _applicationManager = [[DGApplicationManager alloc] initWithDataAccessLayer:dataAcessLayer];
+    }
+    
+    return _applicationManager;
 }
 
 @end

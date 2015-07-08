@@ -8,9 +8,16 @@
 
 #import "DGViewController.h"
 @class DGModelItem;
+@class DGCircleImageView;
 
 @interface DGDetailsViewController : DGViewController
 
 @property (nonatomic,strong) DGModelItem *masterObject;
+
+@property (nonatomic,strong) IBOutlet UIImageView *backgroundImageView;
+@property (nonatomic,strong) IBOutlet DGCircleImageView *iconImageView;
+
+@property (nonatomic,strong) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topBannerHeightConstraint;
 
 @end

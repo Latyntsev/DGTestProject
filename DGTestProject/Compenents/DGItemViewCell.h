@@ -11,6 +11,12 @@
 
 @interface DGItemViewCell : UITableViewCell
 
+@property (nonatomic,weak) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic,weak) IBOutlet UIImageView *iconImageView;
+@property (nonatomic,weak) IBOutlet UILabel *fullNameLabel;
+@property (nonatomic,weak) IBOutlet UILabel *phoneNumberLabel;
+@property (nonatomic,weak) IBOutlet UILabel *companyNameLabel;
+
 @property (nonatomic,strong) DGModelItem *item;
 
 @end

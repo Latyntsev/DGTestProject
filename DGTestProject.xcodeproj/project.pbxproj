@@ -12,7 +12,6 @@
 		0CB54CB31B4D382600262296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB54CB11B4D382600262296 /* Main.storyboard */; };
 		0CB54CB51B4D382600262296 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB54CB41B4D382600262296 /* Images.xcassets */; };
 		0CB54CB81B4D382600262296 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB54CB61B4D382600262296 /* LaunchScreen.xib */; };
-		0CB54CC41B4D382600262296 /* DGTestProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB54CC31B4D382600262296 /* DGTestProjectTests.m */; };
 		0CB54CD41B4D7A3200262296 /* DGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB54CD31B4D7A3200262296 /* DGViewController.m */; };
 		0CB54CD71B4D7A4100262296 /* DGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB54CD61B4D7A4100262296 /* DGMainViewController.m */; };
 		0CB54CDA1B4D7A5100262296 /* DGDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB54CD91B4D7A5100262296 /* DGDetailsViewController.m */; };
@@ -20,6 +19,14 @@
 		0CB54CE01B4D7A9800262296 /* DGModelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB54CDF1B4D7A9800262296 /* DGModelItem.m */; };
 		0CB54CE31B4D82D300262296 /* DGItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB54CE21B4D82D300262296 /* DGItemViewCell.m */; };
 		0CB54CE51B4D835000262296 /* DGUtilits.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB54CE41B4D835000262296 /* DGUtilits.m */; };
+		0CFE46421B4D85B700DF0744 /* DGWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE46411B4D85B700DF0744 /* DGWebService.m */; };
+		0CFE46461B4D86F800DF0744 /* DGDataAccessLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE46451B4D86F800DF0744 /* DGDataAccessLayer.m */; };
+		0CFE46481B4D93AE00DF0744 /* TestCaseDGModelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE46471B4D93AE00DF0744 /* TestCaseDGModelItem.m */; };
+		0CFE464B1B4DA51100DF0744 /* DGApplicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE464A1B4DA51100DF0744 /* DGApplicationManager.m */; };
+		0CFE464E1B4DB57800DF0744 /* DGCircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE464D1B4DB57800DF0744 /* DGCircleImageView.m */; };
+		0CFE46531B4DB82600DF0744 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE46521B4DB82600DF0744 /* FXBlurView.m */; };
+		0CFE46561B4DBAED00DF0744 /* DFKeyValueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE46551B4DBAED00DF0744 /* DFKeyValueTableViewCell.m */; };
+		0CFE46591B4DCE5800DF0744 /* DFLongTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE46581B4DCE5800DF0744 /* DFLongTextTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +50,6 @@
 		0CB54CB71B4D382600262296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0CB54CBD1B4D382600262296 /* DGTestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DGTestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB54CC21B4D382600262296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CB54CC31B4D382600262296 /* DGTestProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGTestProjectTests.m; sourceTree = "<group>"; };
 		0CB54CD21B4D7A3200262296 /* DGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGViewController.h; sourceTree = "<group>"; };
 		0CB54CD31B4D7A3200262296 /* DGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGViewController.m; sourceTree = "<group>"; };
 		0CB54CD51B4D7A4100262296 /* DGMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGMainViewController.h; sourceTree = "<group>"; };
@@ -58,6 +64,22 @@
 		0CB54CE21B4D82D300262296 /* DGItemViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGItemViewCell.m; sourceTree = "<group>"; };
 		0CB54CE41B4D835000262296 /* DGUtilits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGUtilits.m; sourceTree = "<group>"; };
 		0CB54CE61B4D835900262296 /* DGUtilits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGUtilits.h; sourceTree = "<group>"; };
+		0CFE46401B4D85B700DF0744 /* DGWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGWebService.h; sourceTree = "<group>"; };
+		0CFE46411B4D85B700DF0744 /* DGWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGWebService.m; sourceTree = "<group>"; };
+		0CFE46431B4D866800DF0744 /* DGConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGConfig.h; sourceTree = "<group>"; };
+		0CFE46441B4D86F800DF0744 /* DGDataAccessLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGDataAccessLayer.h; sourceTree = "<group>"; };
+		0CFE46451B4D86F800DF0744 /* DGDataAccessLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGDataAccessLayer.m; sourceTree = "<group>"; };
+		0CFE46471B4D93AE00DF0744 /* TestCaseDGModelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCaseDGModelItem.m; sourceTree = "<group>"; };
+		0CFE46491B4DA51100DF0744 /* DGApplicationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGApplicationManager.h; sourceTree = "<group>"; };
+		0CFE464A1B4DA51100DF0744 /* DGApplicationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGApplicationManager.m; sourceTree = "<group>"; };
+		0CFE464C1B4DB57800DF0744 /* DGCircleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGCircleImageView.h; sourceTree = "<group>"; };
+		0CFE464D1B4DB57800DF0744 /* DGCircleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGCircleImageView.m; sourceTree = "<group>"; };
+		0CFE46511B4DB82600DF0744 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		0CFE46521B4DB82600DF0744 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		0CFE46541B4DBAED00DF0744 /* DFKeyValueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFKeyValueTableViewCell.h; sourceTree = "<group>"; };
+		0CFE46551B4DBAED00DF0744 /* DFKeyValueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFKeyValueTableViewCell.m; sourceTree = "<group>"; };
+		0CFE46571B4DCE5800DF0744 /* DFLongTextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFLongTextTableViewCell.h; sourceTree = "<group>"; };
+		0CFE46581B4DCE5800DF0744 /* DFLongTextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLongTextTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +123,8 @@
 			children = (
 				0CB54CAB1B4D382600262296 /* AppDelegate.h */,
 				0CB54CAC1B4D382600262296 /* AppDelegate.m */,
+				0CFE46431B4D866800DF0744 /* DGConfig.h */,
+				0CFE464F1B4DB82600DF0744 /* ThirdParty */,
 				0CB54CD01B4D53A300262296 /* Utilits */,
 				0CB54CD11B4D53A300262296 /* ViewControllers */,
 				0CB54CCD1B4D53A300262296 /* Compenents */,
@@ -126,8 +150,8 @@
 		0CB54CC01B4D382600262296 /* DGTestProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				0CB54CC31B4D382600262296 /* DGTestProjectTests.m */,
 				0CB54CC11B4D382600262296 /* Supporting Files */,
+				0CFE46471B4D93AE00DF0744 /* TestCaseDGModelItem.m */,
 			);
 			path = DGTestProjectTests;
 			sourceTree = "<group>";
@@ -145,6 +169,12 @@
 			children = (
 				0CB54CE11B4D82D300262296 /* DGItemViewCell.h */,
 				0CB54CE21B4D82D300262296 /* DGItemViewCell.m */,
+				0CFE46541B4DBAED00DF0744 /* DFKeyValueTableViewCell.h */,
+				0CFE46551B4DBAED00DF0744 /* DFKeyValueTableViewCell.m */,
+				0CFE46571B4DCE5800DF0744 /* DFLongTextTableViewCell.h */,
+				0CFE46581B4DCE5800DF0744 /* DFLongTextTableViewCell.m */,
+				0CFE464C1B4DB57800DF0744 /* DGCircleImageView.h */,
+				0CFE464D1B4DB57800DF0744 /* DGCircleImageView.m */,
 			);
 			path = Compenents;
 			sourceTree = "<group>";
@@ -163,6 +193,12 @@
 		0CB54CCF1B4D53A300262296 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0CFE46401B4D85B700DF0744 /* DGWebService.h */,
+				0CFE46411B4D85B700DF0744 /* DGWebService.m */,
+				0CFE46441B4D86F800DF0744 /* DGDataAccessLayer.h */,
+				0CFE46451B4D86F800DF0744 /* DGDataAccessLayer.m */,
+				0CFE46491B4DA51100DF0744 /* DGApplicationManager.h */,
+				0CFE464A1B4DA51100DF0744 /* DGApplicationManager.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -187,6 +223,23 @@
 				0CB54CD91B4D7A5100262296 /* DGDetailsViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0CFE464F1B4DB82600DF0744 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				0CFE46501B4DB82600DF0744 /* FXBlurView */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		0CFE46501B4DB82600DF0744 /* FXBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				0CFE46511B4DB82600DF0744 /* FXBlurView.h */,
+				0CFE46521B4DB82600DF0744 /* FXBlurView.m */,
+			);
+			path = FXBlurView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,15 +342,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CFE46421B4D85B700DF0744 /* DGWebService.m in Sources */,
 				0CB54CE31B4D82D300262296 /* DGItemViewCell.m in Sources */,
 				0CB54CAD1B4D382600262296 /* AppDelegate.m in Sources */,
 				0CB54CAA1B4D382600262296 /* main.m in Sources */,
 				0CB54CE01B4D7A9800262296 /* DGModelItem.m in Sources */,
 				0CB54CD71B4D7A4100262296 /* DGMainViewController.m in Sources */,
+				0CFE46591B4DCE5800DF0744 /* DFLongTextTableViewCell.m in Sources */,
+				0CFE46561B4DBAED00DF0744 /* DFKeyValueTableViewCell.m in Sources */,
 				0CB54CDA1B4D7A5100262296 /* DGDetailsViewController.m in Sources */,
+				0CFE464B1B4DA51100DF0744 /* DGApplicationManager.m in Sources */,
 				0CB54CD41B4D7A3200262296 /* DGViewController.m in Sources */,
+				0CFE46531B4DB82600DF0744 /* FXBlurView.m in Sources */,
+				0CFE464E1B4DB57800DF0744 /* DGCircleImageView.m in Sources */,
 				0CB54CE51B4D835000262296 /* DGUtilits.m in Sources */,
 				0CB54CDD1B4D7A7100262296 /* DGModelObject.m in Sources */,
+				0CFE46461B4D86F800DF0744 /* DGDataAccessLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CB54CC41B4D382600262296 /* DGTestProjectTests.m in Sources */,
+				0CFE46481B4D93AE00DF0744 /* TestCaseDGModelItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

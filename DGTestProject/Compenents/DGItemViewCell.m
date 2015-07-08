@@ -8,11 +8,13 @@
 
 #import "DGItemViewCell.h"
 #import "DGModelItem.h"
+#import "DGCircleImageView.h"
 
 @implementation DGItemViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    ((DGCircleImageView *)self.iconImageView).borderLayerWidth = 4;
+    ((DGCircleImageView *)self.iconImageView).borderLayerColor = [[UIColor whiteColor] CGColor];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

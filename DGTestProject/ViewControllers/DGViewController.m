@@ -7,6 +7,7 @@
 //
 
 #import "DGViewController.h"
+#import "AppDelegate.h"
 
 @interface DGViewController ()
 
@@ -16,17 +17,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 }
 
-/*
-#pragma mark - Navigation
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.25;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionFade;
+    transition.delegate = self;
+    [self.navigationController.navigationBar.layer addAnimation:transition forKey:nil];
 }
-*/
+
+- (DGApplicationManager *)applicationManager {
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    return appDelegate.applicationManager;
+}
 
 @end

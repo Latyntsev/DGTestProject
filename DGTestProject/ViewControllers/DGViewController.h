@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DGApplicationManager.h"
 
 @interface DGViewController : UIViewController
+
+- (DGApplicationManager *)applicationManager;
 
 @end
